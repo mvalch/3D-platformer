@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 429525308}
   - component: {fileID: 429525307}
   - component: {fileID: 429525306}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -387,13 +387,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.2827051, y: -0.0078377165, z: 0.0020154095, w: -0.9591728}
-  m_LocalPosition: {x: 0.01418589, y: 4.2444315, z: -4.618804}
+  m_LocalRotation: {x: -0.11259723, y: -0.008068146, z: 0.00062984036, w: -0.99360776}
+  m_LocalPosition: {x: -0.02, y: 2.19, z: -6.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1498072964}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 12.93, y: 0.934, z: 0.033}
 --- !u!1 &1388869928
 GameObject:
   m_ObjectHideFlags: 0
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 1388869930}
   - component: {fileID: 1388869929}
   - component: {fileID: 1388869933}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6cc6618ca2e2b084783e8f51ce9c118d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -485,8 +485,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388869928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.5151, y: 2.5151, z: 2.5151}
+  m_LocalPosition: {x: 0, y: -0.15, z: 0}
+  m_LocalScale: {x: 15.07727, y: 15.07727, z: 15.07727}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -616,10 +616,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31445c93b9f84dc4f8b56888da494c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundChecker: {fileID: 0}
+  maxSpeed: 3
+  normalSpeed: 10
+  sprintSpeed: 20
+  groundChecker: {fileID: 1823563020}
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  jumpforce: 300
 --- !u!54 &1498072966
 Rigidbody:
   m_ObjectHideFlags: 0
